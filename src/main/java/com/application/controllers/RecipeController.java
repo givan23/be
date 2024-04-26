@@ -1,7 +1,9 @@
-package com.recipesAdmin;
+package com.application.controllers;
 
 import java.util.List;
 
+import com.application.models.RecipeModel;
+import com.application.repositories.IRecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,30 +11,30 @@ import org.springframework.web.bind.annotation.*;
 public class RecipeController {
 
     @Autowired
-    private IRecipeService recipeService;
+    private IRecipeRepository recipeRepository;
 
     @GetMapping(value = "/recipes")
     public List<RecipeModel> getRecipes() {
-        return recipeService.findAll();
+        return recipeRepository.findAll();
     }
 
     @GetMapping(value = "/recipe")
     public RecipeModel getRecipe(@RequestParam String id) {
-        return recipeService.findById(id);
+        return recipeRepository.findById(id);
     }
 
     @PostMapping(value = "/recipe")
     List<RecipeModel> addRecipe(@RequestBody RecipeModel recipe) {
-        return recipeService.createRecipe(recipe);
+        return recipeRepository.createRecipe(recipe);
     }
 
     @PatchMapping(value = "/recipe")
     List<RecipeModel> recipe(@RequestParam String id, @RequestBody RecipeModel recipe) {
-        return recipeService.updateRecipe(id, recipe);
+        return recipeRepository.updateRecipe(id, recipe);
     }
 
     @DeleteMapping(value = "/recipe")
     List<RecipeModel> deleteRecipe(@RequestParam String id) {
-        return recipeService.deleteRecipe(id);
+        return recipeRepository.deleteRecipe(id);
     }
 }

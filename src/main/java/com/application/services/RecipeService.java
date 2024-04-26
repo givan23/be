@@ -1,13 +1,15 @@
-package com.recipesAdmin;
+package com.application.services;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.application.repositories.IRecipeRepository;
+import com.application.models.RecipeModel;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RecipeService implements IRecipeService {
+public class RecipeService implements IRecipeRepository {
 
     @Override
     public List<RecipeModel> findAll() {

@@ -1,6 +1,5 @@
 # BE project
 
-
 ## GitHub repository creation
 
 - Main (prod branch)
@@ -22,6 +21,7 @@ sources:
 
 - [New spring project](https://www.springcloud.io/post/2022-09/springboot-getstart/#gsc.tab=0)
 - [Spring structure](https://www.javatpoint.com/spring-boot-rest-example)
+- [Spring data JPA + postgresDB](https://mkyong.com/spring-boot/spring-boot-spring-data-jpa-postgresql)
 
 ## Postman (to testing the services)
 
@@ -38,4 +38,16 @@ logic programming:
 - BE --> BE
 - BE --> FE
 
+## Scripts
 
+- Start application
+
+```Shell
+mvn spring-boot:run
+```
+
+- Install dependencies
+
+```Shell
+mvn dependency:tree
+``` 

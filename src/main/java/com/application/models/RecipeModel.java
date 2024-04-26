@@ -1,4 +1,4 @@
-package com.recipesAdmin;
+package com.application.models;
 
 public class RecipeModel {
     private String id;

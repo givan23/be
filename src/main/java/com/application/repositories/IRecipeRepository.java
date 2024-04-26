@@ -1,8 +1,10 @@
-package com.recipesAdmin;
+package com.application.repositories;
+
+import com.application.models.RecipeModel;
 
 import java.util.List;
 
-public interface IRecipeService {
+public interface IRecipeRepository {
     List<RecipeModel> findAll();
 
     RecipeModel findById(String id);

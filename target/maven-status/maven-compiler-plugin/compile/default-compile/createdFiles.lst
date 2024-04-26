@@ -1,5 +1,5 @@
-com\recipeAdmin\RecipeModel.class
-com\recipeAdmin\RecipeService.class
-com\recipeAdmin\RecipeController.class
-com\recipeAdmin\IRecipeService.class
-com\recipeAdmin\SpringBootRestApplication.class
+com\application\MainApplication.class
+com\application\controllers\RecipeController.class
+com\application\repositories\IRecipeRepository.class
+com\application\models\RecipeModel.class
+com\application\services\RecipeService.class
