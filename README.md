@@ -1,5 +1,7 @@
 # BE project
 
+## GitHub repository creation
+
 ## DB PostgreSQL creation
 
 ## BE Spring architecture creation
