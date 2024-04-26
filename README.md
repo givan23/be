@@ -2,6 +2,9 @@
 
 ## GitHub repository creation
 
+- Main (prod branch)
+- Development (dev branch)
+
 ## DB PostgreSQL creation
 
 ## BE Spring architecture creation
